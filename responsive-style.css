@@ -1,0 +1,110 @@
+@media screen and (max-width: 660px) {
+    .nav-links, 
+    .button {
+      display:none;
+    }
+  
+    .burgerbtn {
+      display: block;
+      color: var(--secondary-black);
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      margin-right: .5rem;
+    }
+    .dropdown-menu {
+      display: block;
+    }
+  
+    .social-icons i{
+      max-width: .8rem;
+      font-size: 1.4rem;
+    }
+  
+    .dropdown-menu {
+      left: 2rem;
+      right: 2rem;
+      width: unset;
+    }
+    .language {
+      font-size: .8rem;
+    }
+  
+    .logo {
+      margin-left: 9rem;
+    }
+  
+    .slider {
+      display: flex;
+      aspect-ratio: 9/16;
+      height: fit-content;
+      overflow-x: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      box-shadow: 0 .25rem .5rem #21212126;
+    }
+    
+    .slider img{
+      flex: 1 0 100%;
+      scroll-snap-align: start;
+      object-fit: cover;
+      size: cover;
+    }
+    
+    .first-image{
+      position: absolute;
+      margin-top: 28rem;
+      margin-left:3rem;
+      text-transform: uppercase;
+      font-family: 'Economica', sans-serif;
+    }
+    
+    .first-image h1, 
+    .first-image h2, 
+    .first-image h3 {
+      font-family: 'Economica', sans-serif;
+      color: white;
+    }
+    
+    .first-image h1 {
+      font-size: 3rem;
+      width: 26rem;
+      margin-top: 2rem;
+      color: white;
+      background-color: var(--secondary-red);
+    }
+    
+    .first-image h2 {
+      font-size: 2.1rem;
+    }
+    
+    .first-image h3 {
+      font-size: 1.8rem;
+    }
+    .slider-nav {
+      display:flex;
+      column-gap: 1rem;
+      position: relative;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    
+    .slider-nav a {
+      margin: auto;
+      width: .7rem;
+      height: .7rem;
+      border-radius: 50%;
+      background-color: var(--secondary-red);
+      opacity: .75;
+      transition: opacity ease 250ms;
+    }
+    
+    .slider-nav a:hover {
+      opacity: 1;
+    }
+  };
+    
+    
+    
+  
