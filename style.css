@@ -1811,8 +1811,12 @@ body {
     font-size: 0.7rem;
   }
 
+  .product-container {
+    margin-bottom: 50rem;
+  }
+
   .product-card {
-    height: 19rem;
+    height: 21rem;
     width: 10rem;
   }
 
