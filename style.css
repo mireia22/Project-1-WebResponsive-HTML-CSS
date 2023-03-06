@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Heebo:wght@500&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Heebo:wght@500&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+:root {
+  --main-color: #337ab7;
+  --secondary-red: rgb(139, 7, 7);
+  --secondary-grey: #423f3f;
+  --secondary-white: #f6f2f2;
+  --secondary-black: #020017;
+  font-family: "Economica", sans-serif;
+  font-family: "Heebo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
 
 * {
   margin: 0;
@@ -7,18 +19,6 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-}
-
-:root {
-  --main-color: #337ab7;
-  --secondary-red: rgb(139, 7, 7);
-  --secondary-grey: #423f3f;
-  --secondary-white: #f6f2f2; 
-  --secondary-black: #020017;
-  font-family: 'Economica', sans-serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -30,94 +30,95 @@ body {
 }
 
 .header {
-  position:absolute;
+  position: absolute;
+  z-index: 1;
   width: 100%;
-  background-color: rgba(235, 228, 235, .75);
-  height: 120px;
-  padding: 5px 10%;
+  background-color: rgba(235, 228, 235, 0.75);
+  height: 7rem;
+  padding: 0.4rem 10%;
 }
 
 .top-header {
-  height: 50px;
+  height: 2.7rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   border-bottom: var(--secondary-grey) 2px solid;
 }
 
-.top-header .nav-links{
-  margin-bottom: .5rem;
+.top-header .nav-links-1 {
+  margin-bottom: 0.5rem;
   list-style: none;
   text-transform: uppercase;
 }
 
-.top-header .nav-links a{
-font-family: 'Open Sans', sans-serif;
-font-size: .8rem;
-color: var(--secondary-black);
-font-weight: 600;
+.top-header .nav-links-1 a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: var(--secondary-black);
+  font-weight: 600;
 }
 
-.top-header .nav-links li{
+.top-header .nav-links-1 li {
   display: inline-block;
   align-items: end;
   padding-left: 2rem;
-  padding-bottom: .1rem;
+  padding-bottom: 0.1rem;
 }
 
-.top-header .nav-links a:hover{
+.top-header .nav-links-1 a:hover {
   text-decoration: underline;
 }
 
-.top-header .social-icons li{
+.top-header .social-icons li {
   font-size: 2rem;
   display: inline-block;
-  padding: 0 5px;
+  padding: 0rem 0.4rem;
 }
 
-.top-header .social-icons li:hover{
+.top-header .social-icons li:hover {
   transform: scale(1.2);
 }
 
-.social-icons a{
+.social-icons a {
   color: black;
 }
 
-.top-header .social-icons a:hover{
+.top-header .social-icons a:hover {
   color: var(--main-color);
-  text-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .language {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   margin-left: 2.5rem;
   font-size: 1rem;
   font-weight: 700;
 }
 
 .es {
-  font-family: 'Economica', sans-serif;
-  color:var(--secondary-grey)
+  font-family: "Economica", sans-serif;
+  color: var(--secondary-grey);
 }
 
 .en {
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   margin-left: 1.8rem;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
 .check {
   position: relative;
-  width: .3rem;
+  width: 0.2rem;
 }
 
 .check:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1.8rem;
   height: 1rem;
   background: var(--main-color);
-  border-radius: 90px;
+  border-radius: 10px;
 }
 
 .check:checked:before {
@@ -126,11 +127,11 @@ font-weight: 600;
 
 .check:after {
   position: absolute;
-  content: '';
-  width: .75rem;
+  content: "";
+  width: 0.75rem;
   height: 1rem;
   background: var(--secondary-grey);
-  border-radius: 90px;
+  border-radius: 10px;
   transition: 0.25s;
   border: 2px solid var(--secondary-grey);
   box-sizing: border-box;
@@ -141,11 +142,11 @@ font-weight: 600;
   background: var(--main-color);
 }
 
-.top-header .login-button{
-  font-family: 'Economica', sans-serif;
+.top-header .login-button {
+  font-family: "Economica", sans-serif;
   font-size: 1.2rem;
-  margin-bottom: .5rem;
-  padding: 0 .5rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
   color: var(--secondary-red);
   cursor: pointer;
   font-weight: 400;
@@ -161,15 +162,15 @@ font-weight: 600;
 
 .find-button {
   height: 1.2rem;
-  margin-bottom: .5rem;
-  margin-right: .5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
   display: flex;
   cursor: pointer;
-  padding: .8rem;
+  padding: 0.8rem;
   background-color: var(--secondary-red);
   border-radius: 30px;
   align-items: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .find-button:hover {
@@ -180,42 +181,42 @@ font-weight: 600;
   flex: 1;
   width: 0;
   outline: none;
-  border:none;
-  font-weight:500;
-  transition:0.8s;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
   background: transparent;
   color: white;
 }
 
 .find-button i {
-  margin-top: .1rem;
+  margin-top: 0.1rem;
   color: white;
   font-size: 1rem;
 }
 
 .bottom-header {
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0%; 
+  padding-bottom: 0%;
 }
 
-.bottom-header img{
+.bottom-header img {
   height: 6rem;
   width: auto;
   cursor: pointer;
-  transition:all 0.3s;
+  transition: all 0.3s;
   margin-bottom: 2rem;
 }
 
-.bottom-header img:hover{
- transform: scale(1.2);
+.bottom-header img:hover {
+  transform: scale(1.2);
 }
 
 .bottom-header .nav-links {
   list-style: none;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-size: 1rem;
   font-weight: 900;
   margin-bottom: 30px;
@@ -232,43 +233,42 @@ font-weight: 600;
   transform: scale(1.1);
 }
 
-.bottom-header .nav-links a{
-  font-family: 'Open Sans', sans-serif;
+.bottom-header .nav-links a {
+  font-family: "Open Sans", sans-serif;
   color: var(--secondary-black);
   text-decoration: none;
-  padding: 7px
+  padding: 7px;
 }
 
-.bottom-header .nav-links li a:hover{
+.bottom-header .nav-links li a:hover {
   color: white;
   background-color: var(--main-color);
   border-radius: 5px;
 }
 
-.bottom-header .button {
+.bottom-header .gift-button {
   margin-bottom: 1.9rem;
 }
 
-.bottom-header .button button{
-  font-family: 'Economica', sans-serif;
+.bottom-header .gift-button button {
+  font-family: "Economica", sans-serif;
   text-decoration: none;
   font-weight: 700px;
   font-size: 1rem;
   color: white;
-  padding: .4rem;
+  padding: 0.4rem;
   background-color: var(--secondary-red);
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-out 0s;
   text-transform: uppercase;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.bottom-header .button:hover button i {
+.bottom-header .gift-button:hover button i {
   transform: scale(1.2);
 }
-
 
 .burgerbtn {
   color: var(--secondary-white);
@@ -280,27 +280,27 @@ font-weight: 600;
   display: none;
 }
 
-
-#burger{
+#burger {
   display: none;
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  right: 1rem;
-  height:0;
+  height: 0;
   top: 4rem;
   width: 3rem;
-  background: rgba(255,255,255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
-  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown-menu.open {
-  height: 18.5rem;
+  height: 19rem;
+  width: 65vw;
+  margin: auto;
 }
 
 .dropdown-menu li {
@@ -308,65 +308,66 @@ font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  padding: .6rem;
+  padding: 0.5rem;
 }
 
-.dropdown-menu li a { 
+.dropdown-menu li a {
   color: var(--secondary-black);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.dropdown-menu li .button {
+.dropdown-menu li .gift-button {
   width: 100%;
   display: flex;
   justify-content: center;
   text-decoration: none;
   font-weight: 700px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: white;
-  padding: .3rem;
+  padding: 0.3rem;
   background-color: var(--secondary-red);
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease-out 0s;
   text-transform: uppercase;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  font-family: 'Economica', sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: "Economica", sans-serif;
 }
-
-
 
 /* SECTION 1 */
 .slider {
+  position: relative;
   display: flex;
-  aspect-ratio: 15/7;
+  aspect-ratio: 14.9/7;
   height: fit-content;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  box-shadow: 0 .1rem 1rem #670202bd;
+  box-shadow: 0 0.1rem 1rem #670202bd;
 }
 
-.slider img{
+.slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
   size: cover;
 }
 
-.first-image{
+.first-image {
   position: absolute;
-  margin-top: 28rem;
-  margin-left:3rem;
+  left: 3vw;
+  bottom: 6vh;
   text-transform: uppercase;
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
 }
 
-.first-image h1, 
-.first-image h2, 
+.first-image h1,
+.first-image h2,
 .first-image h3 {
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   color: white;
 }
 
@@ -387,7 +388,7 @@ font-weight: 600;
 }
 
 .slider-nav {
-  display:flex;
+  display: flex;
   column-gap: 1rem;
   position: relative;
   bottom: 1rem;
@@ -398,11 +399,11 @@ font-weight: 600;
 
 .slider-nav a {
   margin: auto;
-  width: .7rem;
-  height: .7rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   background-color: var(--secondary-red);
-  opacity: .75;
+  opacity: 0.75;
   transition: opacity ease 250ms;
 }
 
@@ -410,28 +411,27 @@ font-weight: 600;
   opacity: 1;
 }
 
-
-
 /* SECTION 2 */
 .section-2 .introduction h1 {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 3.5rem;
   margin-top: 2rem;
   font-weight: 300;
 }
 
-.section-2 .introduction h3{
-  font-family: 'Heebo', sans-serif;
+.section-2 .introduction h3 {
+  font-family: "Heebo", sans-serif;
   text-align: center;
   font-size: 1.4rem;
   margin-top: 1rem;
   font-weight: 100;
 }
-.section-2 .introduction h4{
-  font-family: 'Heebo', sans-serif;
+
+.section-2 .introduction h4 {
+  font-family: "Heebo", sans-serif;
   text-align: center;
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -443,7 +443,7 @@ font-weight: 600;
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   display: flex;
   width: 100%;
 }
@@ -460,9 +460,9 @@ font-weight: 600;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
-#image-1, 
-#image-2,
-#image-3 {
+.image-1,
+.image-2,
+.image-3 {
   min-width: 100%;
   height: 100%;
 }
@@ -479,41 +479,41 @@ font-weight: 600;
 }
 
 .card .card-info h1 {
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   text-align: center;
   background-color: var(--secondary-red);
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   transition: 0.3s;
   transition-property: transform;
 }
 
-.card:hover  h1 {
-  transform: translateY(.1rem);
+.card:hover h1 {
+  transform: translateY(0.1rem);
 }
 
 .card h1 span {
   font-size: 1.9rem;
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   font-weight: 900;
 }
 
 .card .card-info p {
   color: white;
   padding: 0rem 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.3rem;
   letter-spacing: 0.5px;
   text-align: center;
   opacity: 0;
   transition: 0.6s;
-  transition-property: opacity, 
+  transition-property: opacity;
 }
 
-.card:hover .card-info p{
+.card:hover .card-info p {
   opacity: 1;
 }
 
@@ -527,7 +527,7 @@ font-weight: 600;
   bottom: -150px;
   transition: 0.5s;
   transition-property: bottom;
-  background-color: rgb(0,0,0,0.8)
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
 .more i {
@@ -543,35 +543,38 @@ font-weight: 600;
   margin: auto;
   text-decoration: none;
   font-size: 1.5rem;
-  text-transform: uppercase ;
+  text-transform: uppercase;
 }
 
-.more .read-more span {
+.more .read-more h3 {
   font-weight: 900;
   color: var(--main-color);
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   margin: auto;
 }
 
-.more .read-more:hover span {
+.more .read-more:hover h3 {
   color: var(--secondary-white);
 }
 
-
+.store-image {
+  object-fit: cover;
+  object-position: 20% 90%;
+}
 
 /* SECTION 3 */
 .bottom-shadow {
   height: 3rem;
-  border-bottom:rgba(151, 145, 145, 0.6) 5px solid;
+  border-bottom: rgba(151, 145, 145, 0.6) 5px solid;
   width: 90%;
-  position:inherit;
+  position: inherit;
   margin: auto;
 }
 
 .bottom-triangle {
   border-bottom: 3px solid rgba(139, 7, 7, 0.7);
   width: 48rem;
-  position:inherit;
+  position: inherit;
   margin: auto;
 }
 
@@ -585,8 +588,8 @@ font-weight: 600;
   margin-top: 20px;
 }
 
-.section-3-header h1{
-  font-family: 'Heebo', sans-serif;
+.section-3-header h1 {
+  font-family: "Heebo", sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-red);
@@ -611,14 +614,14 @@ font-weight: 600;
   position: relative;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border: 0px solid rgba(128, 128, 128, 0);
   transition: all 200ms ease;
   transition-property: border;
 }
 
-.product-card:hover{
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+.product-card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
   border: 5px solid rgba(128, 128, 128, 1);
 }
@@ -627,80 +630,75 @@ font-weight: 600;
   position: absolute;
   width: 100%;
   height: 70%;
-  object-fit:cover;
-}
-
-.more-buy
-.more-product {
-  margin: 1.5rem;
-  position: relative;
+  object-fit: cover;
 }
 
 .more-product h1 {
   position: relative;
   font-weight: 500;
   font-size: 1.5rem;
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   text-align: center;
 }
 
 .more-product h3 {
-  margin: .7rem .1rem 0rem .1rem;
+  margin: 0.4rem 0.1rem 0rem 0.1rem;
   position: relative;
   font-size: 1.6rem;
   color: var(--secondary-red);
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
   text-align: center;
 }
 
-.more-buy {
-  position: relative;
-  background: var(--main-color);
-  margin-top: 6.5rem;
-  margin-bottom: .1rem;
-  margin-left: 30%;
-  width: auto;
-  display: flex;
-  text-transform: uppercase;
-  text-decoration:none ;
-  font-weight: 600;
-  color: var(--secondary-white);
-  transition: all 200ms ease;
-  opacity: 0;
-}
-
-.more-buy span {
-  font-family: 'Economica', sans-serif;
-  margin: auto;
-  font-size: 1rem;
-}
-
-.product-card:hover .more-buy {
-  opacity: 1;
-}
-
 .more-info {
+  margin-top: 6.7rem;
   position: relative;
   background: var(--main-color);
   width: auto;
-  margin-left: 60%;
+  margin-left: 70%;
   display: flex;
   text-transform: uppercase;
-  text-decoration:none ;
-  font-family: 'Economica', sans-serif;
+  text-decoration: none;
+  font-family: "Economica", sans-serif;
   font-weight: 600;
   color: var(--secondary-white);
   opacity: 0;
   transition: all 400ms ease;
 }
 
-.more-info span {
-  font-family: 'Economica', sans-serif;
+.more-info h3 {
+  font-family: "Economica", sans-serif;
   font-size: 1rem;
   margin: auto;
 }
 
-.product-card:hover .more-info{
+.product-card:hover .more-info {
+  opacity: 1;
+}
+
+.more-buy {
+  position: relative;
+  background: var(--main-color);
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+  margin-left: 38%;
+  width: auto;
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--secondary-white);
+  transition: all 200ms ease;
+  opacity: 0;
+}
+
+.more-buy h3 {
+  font-family: "Economica", sans-serif;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.product-card:hover .more-buy {
   opacity: 1;
 }
 
@@ -710,25 +708,24 @@ font-weight: 600;
   color: white;
 }
 
-.title-card{
+.title-card {
   width: 18rem;
   height: 12;
-  margin: .5rem;
+  margin: 0.5rem;
   position: relative;
   overflow: hidden;
   background-color: var(--secondary-red);
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border: 0px solid rgba(128, 128, 128, 0);
   transition: all 200ms ease;
   border-radius: 10px;
-  font-family: 'Economica', sans-serif;
-
+  font-family: "Economica", sans-serif;
 }
 
 .title-card h3 {
   writing-mode: vertical-rl;
   margin-top: 4.5rem;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
   font-size: 2rem;
   color: white;
   display: inline;
@@ -736,52 +733,62 @@ font-weight: 600;
   text-transform: uppercase;
 }
 
+.aut-image {
+  object-position: 0% 95%;
+}
+
+.siv-image {
+  object-position: 0% 30%;
+}
+
 /* SECTION 4 */
 .definitions-container {
-  margin-top: 50px;
+  margin-top: 2.5rem;
   position: relative;
-  background-image: url("./public/images/sunset.jpg");
+  background-image: url("./public/images/backgrounds/sunset.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center ;
+  background-position: center;
   display: grid;
   grid-gap: 0 1em;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .definition {
-  margin: 30px;
+  margin: 2rem;
   display: block;
 }
 
 .definition h2 {
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
-  font-family: 'Economica', sans-serif;
+  font-family: "Economica", sans-serif;
 }
 
-.definition p{
-  padding: .5rem;
-  font-size: 15px;
-  margin-top: 15px;
-  line-height: 18px;
-  font-family: 'Open Sans', sans-serif;
+.definition p {
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.3rem;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-style: italic;
   color: white;
 }
 
-.definition i{
-  margin-right: 15px;
-  font-size: 40px;
+.definition i {
+  margin-right: 0.8rem;
+  font-size: 2.3rem;
 }
 
 .definition:hover p {
   background-color: rgb(2, 0, 23, 0.5);
+  border-radius: 10px;
 }
 
-.definition:hover i{
+.definition:hover i {
   color: var(--secondary-red);
 }
 
@@ -797,15 +804,19 @@ font-weight: 600;
   display: flex;
 }
 
-.item img{
+.item img {
   object-fit: cover;
   width: auto;
   padding: 0 2rem;
 }
 
 @keyframes scroll {
-  0% {transform: translateX (0);}
-  100% {transform: translateX(-100%);};
+  0% {
+    transform: translateX (0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* FOOTER */
@@ -817,14 +828,14 @@ font-weight: 600;
 }
 
 .top-footer {
-  height: 3rem;
-  border-bottom:rgba(151, 145, 145, 0.2) 5px solid;
+  height: 2rem;
+  border-bottom: rgba(151, 145, 145, 0.2) 5px solid;
   width: 80%;
   margin: auto;
 }
 
 .middle-footer {
-  height: 6rem;
+  height: 5rem;
   width: 100%;
   margin: auto;
   display: grid;
@@ -846,7 +857,7 @@ font-weight: 600;
 }
 
 .middle-footer h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   margin: auto;
   letter-spacing: 1px;
@@ -854,9 +865,9 @@ font-weight: 600;
   font-weight: 800;
 }
 
-.social-media a{
+.social-media a {
   margin-top: 1rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   font-size: 1.7rem;
   display: inline-block;
   text-decoration: none;
@@ -868,13 +879,13 @@ font-weight: 600;
 }
 
 .legal-links a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 1rem;
   letter-spacing: 1px;
   display: block;
   color: white;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 
@@ -903,460 +914,922 @@ font-weight: 600;
   font-size: 1.7rem;
 }
 
-/* 360×640 (móvil pequeño): 22,64%. */
-@media screen and (max-width: 360px) {
+/* MEDIAS */
 
-  .body {
-    box-sizing: border-box;
-    min-height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+@media screen and (max-width: 2500px) {
+  .first-image h1 {
+    font-size: 6rem;
+    width: max-content;
   }
-  
-  .header {
-    max-width: 100%;
-    display: block;
-    text-align: center;
-    height: 4rem;
+  .first-image h2 {
+    font-size: 4rem;
+    width: max-content;
   }
-
-  .top-header {
-    height: 1.3rem;
-    align-items: center;
+  .first-image h3 {
+    font-size: 3rem;
+    width: max-content;
   }
-
-.top-header .login-button{
-font-size: .8rem;
-margin-bottom: 0rem;
-background-color: var(--secondary-red);
-color: var(--secondary-white);
-cursor: pointer;
-font-weight: 400;
-text-transform: uppercase;
 }
 
- .nav-links, 
-  .button,
-  .social-icons i, 
-  .language, 
-  .find-button {
-    display: none;
-  }
-
-  .bottom-header {
-    height: 2.7rem;
-  }
-
-  .bottom-header img{
-    height: 4rem;
-    margin: auto;
-  }
-
-  .burgerbtn {
-    display: block;
-    color: var(--secondary-black);
-    font-size: 2.5rem;
-    margin: auto;
-  }
-  .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown-menu {
-    left: 2rem;
-    right: 2rem;
-    width: unset;
-  }
-
-  .dropdown-menu .button button {
-    font-family: 'Economica', sans-serif;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: white;
-    padding: 0rem;
-    background-color: var(--secondary-red);
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  
-  }
-
-/* SECTION-1 */
-.button-slider {
-  max-width: 100%;
-}
-  .slider {
-    max-width: 100%;
-    aspect-ratio: 9/16;
-  }
-  
-  .first-image{
-    max-width: 100%;
-    position: absolute;
+@media screen and (max-width: 1704px) {
+  .top-header .nav-links-1 li {
     align-items: center;
-    margin-left:0rem;
+    padding-left: 1rem;
+  }
+
+  .bottom-header .nav-links li {
+    align-items: end;
+    padding: 0 1px;
   }
 
   .first-image h1 {
-    max-width: 100%;
-    font-size: 2.4rem;
-    text-align: center;
-    color: white;
-    margin: auto;
-    background-color: var(--secondary-red);
+    font-size: 4rem;
+    width: max-content;
   }
-  
   .first-image h2 {
-    text-align: center;
-    font-size: 1.3rem;
-    margin-top: 1.5rem;
+    font-size: 3rem;
+    width: max-content;
+  }
+  .first-image h3 {
+    font-size: 2rem;
+    width: max-content;
+  }
 
+  .card {
+    width: 22rem;
+    height: 25rem;
+    margin: 1.5rem 2rem;
+  }
+
+  @media screen and (min-width: 1502px) {
+    .first-image {
+      margin-top: 30vh;
+    }
+    .first-image h1 {
+      font-size: 4rem;
+      width: max-content;
+    }
+    .first-image h2 {
+      font-size: 3rem;
+      width: max-content;
+    }
+    .first-image h3 {
+      font-size: 2rem;
+      width: max-content;
+    }
+    .top-header .nav-links-1 li a {
+      font-size: 0.7rem;
+      padding: 0.5rem;
+    }
+
+    .bottom-header .nav-links li a {
+      font-size: 0.8rem;
+    }
+
+    .language {
+      font-size: 0.7rem;
+    }
+    .top-header .login-button {
+      font-size: 1rem;
+    }
+
+    .bottom-header .gift-button button {
+      font-size: 1rem;
+    }
+
+    .more-info {
+      background-color: var(--secondary-red);
+    }
+  }
+
+  @media screen and (max-width: 1354px) {
+    .first-image h1 {
+      font-size: 3rem;
+      width: max-content;
+    }
+    .first-image h2 {
+      font-size: 2.5rem;
+      width: max-content;
+    }
+    .first-image h3 {
+      font-size: 2rem;
+      width: max-content;
+    }
+
+    .card {
+      width: 22rem;
+      height: 25rem;
+      margin: 1.5rem 1rem;
+    }
+    .top-header .nav-links-1 li {
+      align-items: center;
+      padding-left: 0.6rem;
+      padding-bottom: 0.1rem;
+      font-size: 0.8rem;
+    }
+
+    .bottom-header .nav-links li {
+      align-items: end;
+      padding: 0 1px;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 1194px) {
+    .nav-links-1 li:not(:last-child) {
+      display: none;
+    }
+
+    .bottom-header .nav-links li {
+      align-items: end;
+      padding: 0 1px;
+      font-size: 0.7rem;
+    }
+
+    .bottom-header .gift-button button {
+      font-size: 0.8rem;
+      padding: 0.3rem;
+    }
+
+    .bottom-header .gift-button button i {
+      transform: scale(1.2);
+    }
+
+    .first-image h1 {
+      font-size: 3rem;
+      width: max-content;
+    }
+    .first-image h2 {
+      font-size: 2.5rem;
+      width: max-content;
+    }
+    .first-image h3 {
+      font-size: 2rem;
+      width: max-content;
+    }
+
+    .card {
+      width: 18rem;
+      height: 25rem;
+      margin: 1.5rem 1rem;
+    }
+
+    .more {
+      bottom: -250px;
+    }
+
+    .product-container {
+      max-width: 70rem;
+      height: 20rem;
+    }
+
+    .more-product h3 {
+      font-size: 1.5rem;
+      bottom: -6rem;
+    }
+
+    .more-product h1 {
+      bottom: -7rem;
+    }
+
+    .more-info {
+      bottom: -4rem;
+    }
+
+    .more-buy {
+      bottom: -4rem;
+      right: 0rem;
+    }
+
+    .title-card h3 {
+      margin-top: 9rem;
+    }
+  }
+
+  @media screen and (max-width: 1184px) {
+    .nav-links li:last-child {
+      display: none;
+    }
+
+    .nav-links li:first-child {
+      display: none;
+    }
+
+    .bottom-header .nav-links li {
+      padding: 0;
+      font-size: 0.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bottom-header .gift-button button {
+      font-size: 0.8rem;
+      padding: 0.3rem;
+    }
+
+    .first-image h1 {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+
+    .first-image h2 {
+      font-size: 2rem;
+    }
+
+    .first-image h3 {
+      font-size: 1.5rem;
+    }
+
+    .section-2 .introduction h1 {
+      font-size: 2.4rem;
+    }
+
+    .card {
+      width: 15rem;
+      height: 25rem;
+      margin: 1.5rem 0.5rem;
+    }
+
+    .product-container {
+      max-width: 70rem;
+      height: 24rem;
+    }
+
+    .more {
+      bottom: -250px;
+    }
+
+    .more-product h3 {
+      margin-top: 1rem;
+
+      padding: 0;
+    }
+
+    .more-buy {
+      opacity: 1;
+      top: 8vh;
+      margin-left: 0rem;
+    }
+
+    .more-info {
+      opacity: 1;
+      top: 8vh;
+      margin-left: 6rem;
+      background-color: var(--secondary-red);
+    }
+
+    .more-info h3 {
+      font-size: 1rem;
+    }
+
+    .title-card h3 {
+      margin-top: 9rem;
+    }
+
+    .definitions-container {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+    .definition {
+      margin: 2rem;
+    }
+
+    .definition h2 {
+      color: var(--secondary-red);
+      font-size: 2.3rem;
+      text-align: center;
+    }
+
+    .definition i {
+      margin-right: 1rem;
+    }
+
+    .definition p {
+      text-align: center;
+      margin: 0 3rem;
+      color: var(--secondary-white);
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 3rem;
+    }
+    .top-header {
+      height: 1.3rem;
+    }
+
+    .top-header .language {
+      display: none;
+    }
+
+    .top-header .login-button {
+      font-size: 0.8rem;
+    }
+
+    .top-header .social-icons i {
+      font-size: 1rem;
+    }
+
+    .find-button {
+      height: 1rem;
+      margin-bottom: 0.3rem;
+      padding: 0.5rem;
+    }
+
+    .find-button i {
+      margin-top: 0.1rem;
+      font-size: 0.5rem;
+    }
+
+    .nav-links li:nth-child(5) {
+      display: none;
+    }
+
+    .top-header .nav-links-1 a {
+      font-size: 0.5rem;
+    }
+
+    .bottom-header .nav-links {
+      font-size: 0.3rem;
+      margin-top: 1.7rem;
+    }
+
+    .bottom-header {
+      height: 1.9rem;
+    }
+
+    .bottom-header .gift-button {
+      margin-bottom: 0.6rem;
+    }
+
+    .bottom-header .gift-button button {
+      font-size: 0.7rem;
+      padding: 0.2rem;
+    }
+
+    .bottom-header img {
+      margin-bottom: 0.1rem;
+      margin-left: 0.1rem;
+      height: 2rem;
+    }
+
+    .first-image h1 {
+      font-size: 2rem;
+    }
+    .first-image h2 {
+      font-size: 1.5rem;
+    }
+    .first-image h3 {
+      font-size: 1.3rem;
+    }
+
+    #store {
+      width: 25rem;
+      height: 4.6rem;
+    }
+
+    .image-3 {
+      display: none;
+    }
+
+    #store .more {
+      bottom: -5.35rem;
+      margin: 0rem;
+      padding: 0rem;
+      color: var(--secondary-white);
+    }
+    #store .read-more h3 {
+      color: var(--secondary-white);
+    }
+
+    #store .read-more i {
+      display: inline;
+      margin-left: 0.5rem;
+    }
+
+    .product-container {
+      max-width: 70rem;
+      height: 18rem;
+    }
+
+    .title-card h3 {
+      margin-top: 6rem;
+    }
+
+    #product-image {
+      height: 60%;
+    }
+
+    .more-product h3 {
+      font-size: 1.5rem;
+      bottom: -0.5rem;
+    }
+
+    .more-product h1 {
+      bottom: -0.5rem;
+    }
+
+    .more-buy {
+      opacity: 1;
+      top: 1.5vh;
+    }
+
+    .more-info {
+      opacity: 1;
+      top: 2vh;
+      margin-left: 5rem;
+    }
+
+    .more-info h3 {
+      font-size: 1rem;
+    }
+
+    .logo-footer {
+      height: 5rem;
+    }
+
+    .middle-footer h2 {
+      margin-top: 1rem;
+    }
+
+    .legal-links a {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 585px) {
+    .body {
+      box-sizing: border-box;
+      min-height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      max-width: 100%;
+      display: block;
+      text-align: center;
+      height: 4rem;
+    }
+
+    .top-header .login-button {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      padding: 0.1rem 0.2rem;
+      background-color: var(--secondary-red);
+      color: var(--secondary-white);
+    }
+
+    .top-header .nav-links-1 .contact-li {
+      margin-bottom: -1rem;
+      font-family: "Economica", sans-serif;
+    }
+
+    .nav-links,
+    .gift-button,
+    .language,
+    .find-button {
+      display: none;
+    }
+
+    .top-header .social-icons li {
+      padding: 0 0.2rem;
+    }
+
+    .bottom-header {
+      height: 2.7rem;
+    }
+
+    .bottom-header img {
+      height: 4rem;
+      margin: auto;
+    }
+
+    .burgerbtn {
+      display: block;
+      color: var(--secondary-black);
+      font-size: 2.5rem;
+      margin: auto;
+    }
+
+    .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      left: 2rem;
+      right: 2rem;
+      width: unset;
+    }
+
+    .dropdown-menu .gift-button button {
+      font-family: "Economica", sans-serif;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: white;
+      padding: 0rem;
+      background-color: var(--secondary-red);
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-menu li a {
+      font-size: 1.3rem;
+    }
+
+    .dropdown-menu.open {
+      height: 20rem;
+    }
+
+    /* SECTION-1 */
+    .slider {
+      max-width: 100%;
+      aspect-ratio: 9/13;
+    }
+
+    .slider img {
+      scroll-snap-align: center;
+    }
+
+    .first-image {
+      max-width: 100%;
+      align-items: center;
+      margin-bottom: 2vh;
+      font-size: 1.3rem;
+      margin-left: 0;
+    }
+
+    .first-image h1 {
+      max-width: 100%;
+      font-size: 2.4rem;
+      text-align: center;
+      margin: auto;
+    }
+
+    .first-image h2 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
     }
 
     .first-image h3 {
       text-align: center;
+      font-size: 2rem;
+    }
+
+    .slider-nav {
+      width: 100%;
+      bottom: 2rem;
+      transform: translateX(-50%);
+    }
+
+    .slider-nav a {
+      width: 0.7rem;
+      height: 0.7rem;
+      opacity: 1;
+    }
+
+    /* SECTION 2 */
+    .section-2 .introduction h1 {
+      font-size: 2.5rem;
+      font-family: "Economica", sans-serif;
+      color: var(--secondary-red);
+    }
+    .section-2 .introduction h3,
+    .section-2 .introduction h4 {
+      font-size: 0.8rem;
+      margin-top: 0.4rem;
+    }
+
+    .card {
+      width: 10.2rem;
+      height: 17rem;
+      margin: 0.5rem 0.3rem 1.3rem 0.3rem;
+    }
+
+    #store {
+      width: 20rem;
+      height: 4.6rem;
+    }
+
+    .image-3 {
+      display: none;
+    }
+
+    .card .card-info h1 {
+      font-size: 1rem;
+    }
+
+    .card .card-info p {
+      display: none;
+    }
+
+    .more {
+      bottom: 0;
+      font-size: 1.6rem;
+      padding: 0.1rem 0.4rem 0.3rem 0.4rem;
+    }
+
+    #store .more {
+      padding: 0rem;
+      color: var(--secondary-white);
+    }
+
+    .more i {
+      display: inline;
+      margin-left: 0.5rem;
+    }
+
+    #store .read-more h3 {
+      color: var(--secondary-white);
+    }
+
+    #store .read-more i {
+      display: inline;
+      margin-left: 0.5rem;
+    }
+
+    .more .read-more h3 {
       font-size: 1.3rem;
-      }
-  
-  .slider-nav {
-    width: 100%;
-    bottom: 2rem;
-    transform: translateX(-50%);
-    position: relative;
+      padding: 0.2rem;
+    }
+
+    /* SECTION 3 */
+    .bottom-triangle {
+      border-bottom: 3px solid rgba(139, 7, 7);
+      width: auto;
+    }
+    .section-3-header h1 {
+      font-family: "Economica", sans-serif;
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card {
+      box-shadow: 5px 5px 5px rgba(87, 2, 2, 0.4);
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 90rem;
+      width: 100%;
+      height: 22rem;
+      margin-bottom: 80rem;
+    }
+
+    .product-card {
+      height: 18rem;
+      flex-flow: row wrap;
+      margin: auto;
+      width: 17rem;
+      margin-bottom: 1rem;
+    }
+
+    .title-card {
+      margin-bottom: 1rem;
+      width: 95%;
+      height: 2.5rem;
+    }
+
+    .title-card h3 {
+      font-size: 2rem;
+      margin-left: 40vw;
+      writing-mode: horizontal-tb;
+    }
+
+    .more-product h3 {
+      margin-top: 11rem;
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .more-product h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .more-buy h3 {
+      display: none;
+    }
+
+    .more-buy {
+      opacity: 1;
+      position: absolute;
+      margin: 8.3rem 0rem 0rem 9.1rem;
+      bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .more-buy i {
+      padding: 0.2rem;
+    }
+
+    .more-info {
+      position: absolute;
+      margin: 4.7rem 0rem 0rem 8.09rem;
+      opacity: 1;
+      bottom: 7.5rem;
+      margin-left: 13.5rem;
+      background-color: var(--secondary-red);
+    }
+
+    .more-info h3 {
+      padding: 0.2rem;
+      font-size: 1.5rem;
+    }
+
+    #product-image {
+      position: absolute;
+      width: 100%;
+      height: 13.5vh;
+      object-fit: cover;
+    }
+
+    #store .more {
+      bottom: 0rem;
+    }
+
+    #product-image {
+      position: absolute;
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+    }
+
+    /* SECTION 4 */
+    .definitions-container {
+      display: inline-flex;
+      flex-wrap: wrap;
+      background-image: url("./public/images/backgrounds/sunset-2.jpg");
+
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    .definition {
+      margin: 2rem;
+    }
+
+    .definition {
+      margin: 1.5rem;
+    }
+
+    .definition h2 {
+      text-align: left;
+      font-size: 1.7rem;
+      text-align: center;
+      color: var(--secondary-white);
+    }
+
+    .definition i {
+      margin-right: 0.5rem;
+      font-size: 2.3rem;
+      color: var(--secondary-red);
+    }
+
+    .definition p {
+      text-align: justify;
+      line-height: 1.3rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--secondary-black);
+    }
+
+    /* SECTION 5 */
+    .brand-slider {
+      animation: scroll 150s linear infinite;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      height: 9rem;
+      margin-top: 0.4rem;
+      max-height: 100%;
+    }
+
+    .top-footer {
+      height: 0.7rem;
+    }
+
+    .middle-footer {
+      display: grid;
+      height: 5rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+    }
+
+    .logo-footer {
+      width: 5rem;
+      height: 4rem;
+      margin: 1.8rem 1rem 1rem 1rem;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--secondary-white);
+    }
+
+    .middle-footer h2 {
+      letter-spacing: 1px;
+      font-size: 0.7rem;
+    }
+
+    .social-media a {
+      margin-top: 1.5rem;
+      margin-right: 0rem;
+      font-size: 1.25rem;
+    }
+
+    .legal-links {
+      margin-top: 1rem;
+    }
+    .legal-links a {
+      font-family: "Roboto", sans-serif;
+      margin-top: 0rem;
+      letter-spacing: 1px;
+      display: block;
+      color: white;
+      font-size: 0.4rem;
+    }
+
+    .bottom-footer {
+      height: 0.5rem;
+      text-align: center;
+      color: white;
+      font-size: 0.4rem;
+      margin-bottom: 0;
+    }
+
+    /* GO-UP-BUTTON */
+    .go-up-button {
+      margin-bottom: 1.5vh;
+      right: 1.5vh;
+    }
   }
-  
-  .slider-nav a {
-    width: .7rem;
-    height: .7rem;
-    border-radius: 50%;
-    background-color: var(--secondary-red);
-    opacity: 1;
+}
+
+@media screen and (max-width: 406px) {
+  .first-image {
+    margin-left: 55vw;
   }
 
-  #slider-1, 
-  #slider-2, 
-  #slider-3{
-    max-width: 100%;
+  .first-image h1 {
+    font-size: 1.7rem;
+  }
+  .first-image h2 {
+    font-size: 0.9rem;
+  }
+  .first-image h3 {
+    font-size: 1.5rem;
   }
 
-  /* SECTION 2 */
-  .section-2 .introduction h1 {
-    font-size: 2.5rem;
-    font-family: 'Economica', sans-serif;
-    color: var(--secondary-red);
-  }
-  .section-2 .introduction h3, 
-  .section-2 .introduction h4{
-    font-size: .8rem;
-    margin-top: 0.4rem;
+  .product-container {
+    margin-bottom: 42rem;
   }
 
-  .card {
-    width: 10.2rem;
-    height: 17rem;
-    margin: .5rem .3rem 1.3rem .3rem;
+  .dropdown-menu li {
+    padding: 0.3rem;
   }
 
-  #store {
-    width: 20rem;
-    height: 4.6rem;
+  .dropdown-menu li a {
+    font-size: 0.8rem;
   }
 
-  #image-3 {
-   display: none;
-  }
-  
-  .card .card-info h1 {
-    font-size: 1rem;
+  .dropdown-menu.open {
+    height: 13rem;
   }
 
-  .card .card-info p {
-    display: none; 
-  }
-  
-  .more {
-    bottom: 0;
-    font-size: 1.6rem;
-    padding: 0.1rem 0.4rem 0.3rem 0.4rem;
+  .dropdown-menu .gift-button button {
+    font-size: 0.7rem;
   }
 
-  #store .more {
-    padding: 0rem;
-    color: var(--secondary-white);
-  }
-
-  .more i {
-    display:inline;
-    margin-left: 0.5rem;
-  }
-
-  #store .read-more span {
-    color: var(--secondary-white);
-  }
-
-  #store .read-more i {
-    display:inline;
-    margin-left: 0.5rem;
-  }
-  .more .read-more {
-    font-size: 1.4rem;
-  }
-
-  /* SECTION 3 */
-  .section-3-header h1{
-    font-family: 'Economica', sans-serif;
-    font-size: 2.5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-  }
-
-  /* .product-container {
-    display: grid;
-    max-width: 90rem;
-    width: 100%;
-    height: 22.2rem;
-  }
-  
   .product-card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 95%;
-    margin: 0.3rem;
+    height: 19rem;
+    width: 10rem;
   }
 
-  .more-product {
-    display: inline-flex;
+  .more-buy {
+    position: relative;
+    top: -6.5rem;
+    margin-left: 8rem;
+  }
+
+  .more-info {
+    position: relative;
+    top: 6rem;
+    margin-left: 0rem;
   }
 
   .more-product h3 {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    margin-left: .5rem;
-    white-space: nowrap;
+    margin-top: -4rem;
   }
-
-  .more-product h1 {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .more-buy  {
-    grid-column: 3 / 4;
-    grid-row: 1;
-  }
-
-  .more-info  {
-    grid-column: 4 / 4;
-    grid-row: 1;
-  }
-
-.title-card h3 {
-  color: var(--secondary-white);
-  font-size: 1.8rem;
-  writing-mode: horizontal-tb;
-  text-transform: uppercase;
-}
-  
-  #product-image {
-    display: none;
-  }
-
-  .product-card a{
-    display: inline;
-  }
- */
-  
- .product-card {
-  width: 95%;
-  height: 14rem;
-  margin: 0.2rem 0.1rem;
-}
-
- #product-image {
-  position: absolute;
-  width: 100%;
-  height: 55%;
-  object-fit:cover;
-}
-
- .title-card{
-  width: 8.7rem;
-  height: 10;
-  margin-right: 0;
-}
-
-.title-card h3 {
-  margin-top:5rem;
-  margin-left: 0rem;
-  font-size: 1.5rem;
-}
-
-.more-buy
-.more-product {
-  margin: .5rem;
-}
-
-.more-product h1 {
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-.more-product h3 {
-  margin: .7rem .1rem 0rem .1rem;
-  position: relative;
-  font-size: .9rem;
-  text-align: center;
-}
-
-.more-info {
-  margin-left: 50%;
-  opacity: 1;
-}
-
-.more-info span {
-  font-size: .8rem;
-}
-
-.more-buy {
-  position: relative;
-  background:var(--secondary-red);
-  margin-top: 5.7rem;
-  margin-bottom: .1rem;
-  margin-left: 70%;
-  opacity: 1;
-  z-index: 2;
-}
-
-.more-buy span {
-display: none;
-
-}
-
-
-
-/* SECTION 4 */
-.definitions-container {
-display: inline-flex;
-flex-wrap: wrap;
-background-image: url("./public/images/sunset-1.jfif");
-
-background-size:cover;
-background-attachment: fixed;
-background-position: center ;
-
-}
-
-.definition {
-  margin: 2rem;
-}
-
-.definition {
-  margin: 1.5rem;
-}
-
-.definition h2 {
-  text-align:left;
-  font-size: 1.5rem;
-}
-
-.definition i{
-  margin-right: .5rem;
-  font-size: 2.3rem;
-  color: var(--secondary-red);
-}
-
-
-.definition p{
-  text-align: justify;
-  line-height: 1.3rem;
-}
-
-
-/* SECTION 5 */
-.brand-slider {
-  animation: scroll 150s linear infinite;
-}
-
-/* FOOTER */
-
-.footer {
-  margin-top: .4rem;
-  height: 32%;
-}
-
-.top-footer {
-  height: .7rem;
-  border-bottom:rgba(151, 145, 145, 0.2) 3px solid;
-}
-
-.middle-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-
-.logo-footer {
-  width: 5rem;
-  height: 4rem;
-  margin: 1.8rem 1rem 1rem 1rem;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-white);
-}
-
-.middle-footer h2 {
-  letter-spacing: 1px;
-  font-size: .7rem;
-}
-
-.social-media a{
-  margin-top: 1.5rem;
-  margin-right: 0rem;
-  font-size: 1.25rem;
-}
-
-.legal-links {
-  margin-top: 1rem;
-}
-.legal-links a {
-  font-family: 'Roboto', sans-serif;
-  margin-top: 0rem;
-  letter-spacing: 1px;
-  display: block;
-  color: white;
-  font-size: .4rem;
-}
-
-
-.bottom-footer {
-  margin-top: 1rem;
-  height: 1rem;
-  text-align: center;
-  color: white;
-  font-size: .4rem;
-}
-
-
-  
-  
-  
-  
-
-  
-
-  /* SECTION-3 */
-  .bottom-triangle {
-    width: auto;
-  }
-
-
-  .go-up-button {
-    right: 4rem;
-  }
-    
 }

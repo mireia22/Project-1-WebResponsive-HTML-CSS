@@ -2,176 +2,166 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/images/logo/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escuela de parapente | Bautizos de vuelo</title>
-    <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
 
     <!-- HEADER -->
-    <header class="header">
-
-      <div class="top-header">
-        <div class="social-icons">
-            <li class="facebook"><a href="#"><i class='bx bxl-facebook-square' ></i></a>
-            <li class="twitter"><a href="#"><i class='bx bxl-twitter'></i></a>
-            <li class="instagram"><a href="https://www.instagram.com/entrenuvols/" rel="noopener"><i class='bx bxl-instagram-alt'></i></a>
-            <li class="youtube"><a href="#"><i class='bx bxl-youtube' ></i></a>
-        </div>
-        <div class="language">
-          <span class="es">Español</span>
-          <input type="checkbox" class="check">
-          <span class="en">English</span>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">¿Dónde estamos?</a>
-            <li><a href="#">Cómo llegar</a>
-            <li><a href="#">Sobre Entrenuvols</a>
-            <li><a href="#">Contacto</a>
-          </ul>
-        </nav>
-        <a href="#" class="login-button">Iniciar sesión</a>
-        
-        <div class="find-button">
-          <input type="text" placeholder="buscar">
-            <i class='bx bx-search-alt-2' ></i>
-        </div>   
-      </div>
-
-      <div class="bottom-header">
-        <div class="logo">
-          <img src="public/images/logo.png" alt="Logo Parapent Entrenuvols">
-        </div>
-        <nav>
-          <input type="checkbox" id="burger">
-          <label for="check" class="burgerbtn"><i class='bx bx-menu' class="burger-icon"></i></label>
-          
-          <ul class="nav-links">
-            <li><a href="#">Inicio</a>
-            <li><a href="#">Bautizos vuelo</a>
-            <li><a href="#">Escuela Parapente</a>
-            <li><a href="#">+Actividades</a>
-            <li><a href="#">Blog</a>
-            <li><a href="#">Tienda</a>
+<header class="header">
+  <div class="top-header">
+    <ul class="social-icons">
+      <li class="facebook"><a href="#"><i class='bx bxl-facebook-square' ></i></a>
+      <li class="twitter"><a href="#"><i class='bx bxl-twitter'></i></a>
+      <li class="instagram"><a href="https://www.instagram.com/entrenuvols/" rel="noopener"><i class='bx bxl-instagram-alt'></i></a>
+      <li class="youtube"><a href="#"><i class='bx bxl-youtube' ></i></a>
+    </ul>
+    <div class="language">
+      <span class="es">Español</span>
+      <input type="checkbox" class="check">
+      <span class="en">English</span>
+    </div>
+    <nav>
+      <ul class="nav-links-1">
+        <li><a href="#">¿Dónde estamos?</a>
+        <li><a href="#">Cómo llegar</a>
+        <li><a href="#">Sobre Entrenuvols</a>
+        <li class="contact-li"><a href="#">Contacto</a>
+      </ul>
+    </nav>
+      <a href="#" class="login-button">Iniciar sesión</a>
+    <div class="find-button">
+      <input type="text" placeholder="buscar">
+        <i class='bx bx-search-alt-2' ></i>
+    </div>   
+  </div>
+  <div class="bottom-header">
+    <div class="logo">
+      <img src="./public/images/logo/logo.png" alt="Parapent Entrenuvols">
+    </div>
+    <nav>
+      <input type="checkbox" id="burger">
+      <label for="check" class="burgerbtn"><i class='bx bx-menu' class="burger-icon"></i></label>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Bautizos vuelo</a></li>
+          <li><a href="#">Escuela Parapente</a></li>
+          <li><a href="#">+Actividades</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tienda</a></li>
         </ul>
-      </nav>
-      <a href="#" class="button">
+    </nav>
+      <a href="#" class="gift-button">
         <button><i class='bx bx-gift'></i>Cheque regalo</button></a>
+  </div>
+  <div class="dropdown-menu">
+    <ul><li><a href="#">Inicio</a></ul>
+    <ul><li><a href="#">Bautizos vuelo</a></ul>
+    <ul><li><a href="#">Escuela Parapente</a></ul>
+    <ul><li><a href="#">+Actividades</a></ul>
+    <ul><li><a href="#">Blog</a></ul>
+    <ul><li><a href="#">Tienda</a></ul>
+    <ul><li><a href="#" class="gift-button"><button><i class='bx bx-gift'></i>Cheque regalo</button></a></li>
+  </div>
+
+  <script>
+    const toggleBtn = document.querySelector('.burgerbtn')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+    }
+  </script>
+</header>
+<!-- SECTION 1 -->
+<section class="button-slider">
+  <div class="slide-wrapper">          
+    <div class="slider">
+      <div class="first-image">
+        <h3>Vuela en parapene</h3>
+        <h1>Haz realidad tu sueño</h1>
+        <h2>Vive o regala una experiencia inolvidable</h2>
       </div>
-
-      <div class="dropdown-menu">
-        <li><a href="#">Inicio</a>
-          <li><a href="#">Bautizos vuelo</a>
-          <li><a href="#">Escuela Parapente</a>
-          <li><a href="#">+Actividades</a>
-          <li><a href="#">Blog</a>
-          <li><a href="#">Tienda</a>
-          <li><a href="#" class="button"><button><i class='bx bx-gift'></i>Cheque regalo</button></a></li>
-      </div>
-
-      <script>
-        const toggleBtn = document.querySelector('.burgerbtn')
-        const dropDownMenu = document.querySelector('.dropdown-menu')
-        toggleBtn.onclick = function () {
-          dropDownMenu.classList.toggle('open')
-        }
-      </script>
-
-    </header>
-
-    <!-- SECTIONS -->
-    <!-- SECTION 1 -->
-    <section class="button-slider">
-      <div class="slide-wrapper">          
-            <div class="slider">
-              <div class="first-image">
-                <h3>Vuela en parapene</h3>
-                <h1>Haz realidad tu sueño</h1>
-                <h2>Vive o regala una experiencia inolvidable</h2>
-                <a href=""></a>
-              </div>
-              <img id="slider-1" src="./public/images/carousel-2.jpg" alt="Escuela de Parapente">
-              <img id="slider-2" src="./public/images/carousel-1.jpg" alt="Escuela de Parapente">
-              <img id="slider-3" src="./public/images/carousel-3.jpg" alt="Escuela de Parapente">
-            </div>
-            <div class="slider-nav">
-              <a href="#slider-1"></a>
-              <a href="#slider-2"></a>
-              <a href="#slider-3"></a>
-            </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2 -->
-<div class="section-2">
-  <section class="introduction">
-    <h1 id="welcome-title" x="">¡Bienvenidos a Entrenúvols!</h1>
+      <img id="slider-1" src="./public/images/carousel/carousel-1.jpg" alt="Escuela de Parapente">
+      <img id="slider-2" src="./public/images/carousel/carousel-2.jpg" alt="Escuela de Parapente">
+      <img id="slider-3" src="./public/images/carousel/carousel-3.jpg" alt="Escuela de Parapente">
+    </div>
+    <div class="slider-nav">
+      <a href="#slider-1"></a>
+      <a href="#slider-2"></a>
+      <a href="#slider-3"></a>
+    </div>
+  </div>
+</section>
+<!-- SECTION 2 -->
+<section class="section-2">
+  <article class="introduction">
+    <h1>¡Bienvenidos a Entrenúvols!</h1>
     <h3>Cursos, bautizos y venta de material de parapente</h3>
     <h4>Des de 2001</h4>
-  </section>
-
-  <section class="information-cards">
-    <div class="container">
-      <div class="card">
-        <img id="image-1" src="./public/images/card-1.jpg" alt="Vuela en parapente">
-        <div class="card-info">
-          <h1> <span>Vuela</span> en parapente</h1>
-          <div class="more">
-          <a href="https://entrenuvols.com/es/bautizos-vuelo-parapente/" rel="noopener"
-          class="read-more"><span>Información bautizos de vuelo</span></a>
-          <p>¡Reserva hora para venir a volar o compra un Cheque Regalo con fecha abierta para hacer un regalo inolvidable!
-            Equipo de pilotos profesionales con larga experiencia. br Disponemos de material adaptado para discapacitados.
-          </p>
-          </div>
-          <div>
-            
-          </div>
+  </article>
+<section class="information-cards">
+  <div class="container">
+    <div class="card">
+      <img class="image-1" src="./public/images/card/card-1.jpg" alt="Vuela en parapente">
+      <div class="card-info">
+        <h1><span>Vuela</span>en parapente</h1>
+        <div class="more">
+        <a href="https://entrenuvols.com/es/bautizos-vuelo-parapente/" rel="noopener"
+        class="read-more">
+        <h3>Información bautizos de vuelo</h3>
+        </a>
+        <p>¡Reserva hora para venir a volar o compra un Cheque Regalo con fecha abierta para hacer un regalo inolvidable!
+          Equipo de pilotos profesionales con larga experiencia. br Disponemos de material adaptado para discapacitados.
+        </p>
         </div>
-      </div>
+      <div>
+    </div>
+  </div>
+</div>
 
-      <div class="card">
-        <img id="image-2" src="./public/images/card-2.jpg" alt="Aprende a volar">
-        <div class="card-info">
-          <h1> <span>Aprende</span> a volar</h1>
-          <div class="more">
-            <a href="https://entrenuvols.com/es/escuela-de-parapente/" rel="noopener" class="read-more"><span>Información cursos</span></a>
-            <p>Aprende a volar de la manera más segura.
-              <br>Escuela profesional con instructores altamente cualificados y experimentados.<br>
-              Sistema educativo APPI, reconocido mundialmente.</p>  
-          </div>
+    <div class="card">
+      <img class="image-2" src="./public/images/card/card-2.jpg" alt="Aprende a volar">
+      <div class="card-info">
+        <h1> <span>Aprende</span> a volar</h1>
+        <div class="more">
+          <a href="https://entrenuvols.com/es/escuela-de-parapente/" rel="noopener" class="read-more">
+            <h3>Información cursos</h3>
+          </a>
+          <p>Aprende a volar de la manera más segura.
+            <br>Escuela profesional con instructores altamente cualificados y experimentados.<br>
+            Sistema educativo APPI, reconocido mundialmente.</p>  
         </div>
-      </div>
-
-      <div class="card" id="store">
-        <img id="image-3" src="./public/images/card-3.jpg" alt="Tienda">
-        <div class="card-info">
-          <h1> <span>Tienda</span> Entrenúvols</h1>
-          <div class="more">
-            <a href="https://botiga.entrenuvols.com/es/categoria-producto/material-de-vuelo/velas-es/" rel="noopener" class="read-more"><span>Ir a la tienda<i class='bx bx-cart'></i></span></a>
-            <p id="p-store">Tienda de material online y física.<br>Asesoramiento profesional y sin compromiso. <br> Centro de test AirDesign, Advance, Nervures, Sup'Air...
-              Stock permanente de material.</p>    
-          </div>
       </div>
     </div>
+
+    <div class="card" id="store">
+      <img class="image-3" src="./public/images/card/card-3.jpg" alt="Tienda">
+      <div class="card-info">
+        <h1><span>Tienda</span> Entrenúvols</h1>
+        <div class="more">
+          <a href="https://botiga.entrenuvols.com/es/categoria-producto/material-de-vuelo/velas-es/" rel="noopener" class="read-more">
+            <h3>Ir a la tienda<i class='bx bx-cart'></i></h3></a>
+          <p>Tienda de material online y física.<br>Asesoramiento profesional y sin compromiso. <br> Centro de test AirDesign, Advance, Nervures, Sup'Air...
+            Stock permanente de material.</p>    
+        </div>
+    </div>
+  </div>
   </section>
 </div>
 
-      <!-- SECTION 3 -->
-  <section class="section-3-header">
-    <div class="bottom-shadow"></div>
-    <h1>¡Regala emociones! ¡Compra un cheque regalo!
-      <div class="bottom-triangle">
-        <div class="bottom-triangle-form"></div>
-      </div>
-    </h1>
-  </section>
-
-  <section class="product-cards">
-    
+<!-- SECTION 3 -->
+<section class="section-3-header">
+  <div class="bottom-shadow"></div>
+  <h1>¡Regala emociones! <br> ¡Compra un cheque regalo!
+    <div class="bottom-triangle">
+      <div class="bottom-triangle-form"></div>
+    </div>
+  </h1>
+</section>
+<section class="product-cards"> 
   <div class="product-container">
     <div class="title-card">
       <div class="title-product">
@@ -179,45 +169,45 @@
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-1.jpg" alt="Curso iniciación">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="https://entrenuvols.com/es/escuela-de-parapente/curso-iniciacion/" rel="noopener" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-1.jpg" alt="Curso iniciación">
+      <a href="https://entrenuvols.com/es/escuela-de-parapente/curso-iniciacion/" rel="noopener" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Iniciación</h3>
         <h1>545,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-2.jpg" alt="Curso progresión">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="#" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-2.jpg" alt="Curso progresión">
+      <a href="#" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Progresión</h3>
         <h1>495,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-3.jpg" alt="Curso progresión">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="#" class="more-info"><span>+ info</span></a>
+      <img id="product-image" class="aut-image" src="./public/images/product/product-3.jpg" alt="Curso autonomía">
+      <a href="#" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Autonomia</h3>
         <h1>495,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-4.jpg" alt="Curso progresión">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="https://entrenuvols.com/es/escuela-de-parapente/curso-siv/" rel="noopener" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-4.jpg" class="siv-image" alt="Curso SIV">
+      <a href="https://entrenuvols.com/es/escuela-de-parapente/curso-siv/" rel="noopener" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>SIV</h3>
         <h1>700,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-5.jpg" alt="Curso biplaza">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="https://entrenuvols.com/es/escuela-de-parapente/curso-piloto-biplaza/" rel="noopener" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-5.jpg" alt="Curso biplaza">
+      <a href="https://entrenuvols.com/es/escuela-de-parapente/curso-piloto-biplaza/" rel="noopener" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Biplaza</h3> 
         <h1>550,00€</h1>
@@ -231,9 +221,9 @@
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-6.jpg" alt="Curso iniciación">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="https://entrenuvols.com/es/bautizos-vuelo-parapente/bautizo-vuelo-morning-glory/" rel="noopener" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-6.jpg" alt="Vuelo Morning glory">
+      <a href="https://entrenuvols.com/es/bautizos-vuelo-parapente/bautizo-vuelo-morning-glory/" rel="noopener" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Morning glory</h3>
         <h1>90,00€</h1>
@@ -241,36 +231,36 @@
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-7.jpg" alt="Curso progresión">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="#" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-7.jpg" alt="Vuelo pasajero del cielo">
+      <a href="#" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Pasajero del cielo</h3>
         <h1>120,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-8.jpg" alt="Curso progresión">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="#" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-8.jpg" alt="Vuelo congosto">
+      <a href="#" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Vuelo al congosto</h3>
         <h1>100,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-9.jpg" alt="Curso progresión">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="#" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-9.jpg" alt="Curso progresión">
+      <a href="#" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>Rendimiento térmico</h3>
         <h1>120,00€</h1>
       </div>
     </div>
     <div class="product-card">
-      <img id="product-image" src="./public/images/product-10.jpg" alt="Curso biplaza">
-      <a href="#" class="more-buy"><span>Añadir al carrito</span><i class='bx bx-cart'></i></a>
-      <a href="https://entrenuvols.com/es/bautizos-vuelo-parapente/bautizo-vuelo-acrobatico-adrenalina/" rel="noopener" class="more-info"><span>+ info</span></a>
+      <img id="product-image" src="./public/images/product/product-10.jpg" class="adr-image" alt="Curso biplaza">
+      <a href="https://entrenuvols.com/es/bautizos-vuelo-parapente/bautizo-vuelo-acrobatico-adrenalina/" rel="noopener" class="more-info"><h3>+ info</h3></a>
+      <a href="#" class="more-buy"><h3>Añadir al carrito</h3><i class='bx bx-cart'></i></a>
       <div class="more-product">
         <h3>100% adrenalina</h3> 
         <h1>170,00€</h1>
@@ -305,7 +295,7 @@
       <p>Según TripAdvisor, somos la empresa mejor valorada y con más valoraciones de Àger y de las primeras de la provincia de Lleida. <br> Nadie nos puede valorar con más criterio que nuestros clientes y de siempre, nuestra mejor publicidad ha estado la satisfacción de nuestros clientes y el consecuente boca-oreja. <br> ¡Puedes consultar qué dicen de nosotros en las redes!</p>
     </div>
     <div class="definition">
-      <h2><i class='bx bx-current-location' ></i>EL VALLE DE ÀGER</h2>
+      <h2><i class='bx bx-current-location'></i>EL VALLE DE ÀGER</h2>
       <p>Es un lugar idílico para un montón de actividades, pero especialmente para volar en parapente y ala delta. <br> Una de las mejores zonas de vuelo del mundo, tanto para pilotos experimentados como para empezar a volar. <br>
         Te esperamos en nuestras instalaciones con un edificio de más de 150m2 y campo de aterrizaje y prácticas propio de 4 hectáreas.</p>
     </div>
@@ -313,83 +303,78 @@
 
 <!-- SECTION 5 -->
 <div class="brands">
-  <div class="brand-slider">
-    <div class="item">
-      <img src="./public/images/brands-1.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-2.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-3.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-4.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-5.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-6.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-7.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-9.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-10.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-11.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-1.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-2.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-3.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-4.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-5.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-6.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-7.png" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-9.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-10.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-      <img src="./public/images/brands-11.jpg" alt="patrocinadores" height="100" width="100">
-    </div>
-    <div class="item">
-    </div>
-
-  </div>
+  <ul class="brand-slider">
+    <li class="item">
+      <img src="./public/images/brands/brands-1.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-2.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-3.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-4.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-5.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-6.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-7.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-9.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-10.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-11.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-1.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-2.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-3.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-4.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-5.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-6.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-7.png" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-9.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-10.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+    <li class="item">
+      <img src="./public/images/brands/brands-11.jpg" alt="Colaboradores" height="100" width="100">
+    </li>
+  </ul>
 </div>
-
-<!-- SECTION 6-REVIEWS -->
 
 <!-- SECTION 7-FOOTER -->
 <footer class="footer">
-  <div class="top-footer"></div>
-  <div class="middle-footer">
+  <section class="top-footer"></section>
+  <section class="middle-footer">
       <figure class="logo-footer">
-        <a href="#"><img src="public/images/logo-footer.jpg" alt="Logo Parapent Entrenuvols"></a>
+        <a href="#"><img src="public/images/logo/logo-footer.jpg" alt="Logo Parapent Entrenuvols"></a>
       </figure>
       <h2>SOCIALÍZATE
       <div class="social-media">
@@ -404,25 +389,14 @@
         <a href="#">Condiciones generales de contratación</a>
         <a href="#">Privacidad y protección de datos</a>
       </div>
-  </div>
-  <div class="bottom-footer">
+  </section>
+  <section class="bottom-footer">
     <small>&copy; 2023 <b>Entrenúvols</b> - Todos los Derechos Reservados.</small>
-  </div>
+  </section>
 </footer>
 
 <!-- FIXED-BUTTON -->
 <a class="go-up-button" href="#"><i class='bx bxs-to-top'></i></a>
-
-
-  
-
-
-
-
-      
-
-
 <div id="app"></div>
-
   </body>
 </html>
