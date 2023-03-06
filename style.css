@@ -6,10 +6,16 @@
   --secondary-grey: #423f3f;
   --secondary-white: #f6f2f2;
   --secondary-black: #020017;
+
   font-family: "Economica", sans-serif;
   font-family: "Heebo", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
+
+  --typography-h1: 2rem;
+  --typography-h2: 1.5rem;
+  --typography-h3: 1.25rem;
+  --typography-p: 1rem;
 }
 
 * {
@@ -1776,11 +1782,10 @@ body {
   }
 }
 
-@media screen and (max-width: 406px) {
+@media screen and (max-width: 376px) {
   .first-image {
-    margin-left: 90vw;
+    margin-left: 55vw;
   }
-
   .first-image h1 {
     font-size: 1.7rem;
   }
@@ -1791,12 +1796,8 @@ body {
     font-size: 1.5rem;
   }
 
-  .product-container {
-    margin-bottom: 42rem;
-  }
-
   .dropdown-menu li {
-    padding: 0.3rem;
+    padding: 0.5rem;
   }
 
   .dropdown-menu li a {
@@ -1804,35 +1805,35 @@ body {
   }
 
   .dropdown-menu.open {
-    height: 13rem;
+    height: 15rem;
   }
 
   .dropdown-menu .gift-button button {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .product-container {
-    margin-bottom: 50rem;
+    margin-bottom: 60rem;
   }
 
   .product-card {
-    height: 21rem;
+    height: 23rem;
     width: 10rem;
   }
 
   .more-buy {
     position: relative;
-    top: -6.5rem;
+    top: -4.5rem;
     margin-left: 8rem;
   }
 
   .more-info {
     position: relative;
-    top: 6rem;
+    top: 7.9rem;
     margin-left: 0rem;
   }
 
   .more-product h3 {
-    margin-top: -4rem;
+    margin-top: -2rem;
   }
 }
