@@ -256,7 +256,7 @@ body {
   margin-bottom: 1.9rem;
 }
 
-.bottom-header .gift-button button {
+.bottom-header .gift-button {
   font-family: "Economica", sans-serif;
   text-decoration: none;
   font-weight: 700px;
@@ -272,7 +272,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.bottom-header .gift-button:hover button i {
+.bottom-header .gift-button:hover i {
   transform: scale(1.2);
 }
 
@@ -999,7 +999,7 @@ body {
       font-size: 1rem;
     }
 
-    .bottom-header .gift-button button {
+    .bottom-header .gift-button {
       font-size: 1rem;
     }
 
@@ -1052,12 +1052,12 @@ body {
       font-size: 0.7rem;
     }
 
-    .bottom-header .gift-button button {
+    .bottom-header .gift-button {
       font-size: 0.8rem;
       padding: 0.3rem;
     }
 
-    .bottom-header .gift-button button i {
+    .bottom-header .gift-button i {
       transform: scale(1.2);
     }
 
@@ -1127,7 +1127,7 @@ body {
       margin-bottom: 0.5rem;
     }
 
-    .bottom-header .gift-button button {
+    .bottom-header .gift-button {
       font-size: 0.8rem;
       padding: 0.3rem;
     }
@@ -1271,7 +1271,7 @@ body {
       margin-bottom: 0.6rem;
     }
 
-    .bottom-header .gift-button button {
+    .bottom-header .gift-button {
       font-size: 0.7rem;
       padding: 0.2rem;
     }
@@ -1433,7 +1433,7 @@ body {
       width: unset;
     }
 
-    .dropdown-menu .gift-button button {
+    .dropdown-menu .gift-button {
       font-family: "Economica", sans-serif;
       text-decoration: none;
       font-weight: 700;
@@ -1808,7 +1808,7 @@ body {
     height: 15rem;
   }
 
-  .dropdown-menu .gift-button button {
+  .dropdown-menu .gift-button {
     font-size: 1rem;
   }
 
